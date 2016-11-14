@@ -22,7 +22,7 @@ import android.widget.Toast;
 public class LUtils {
     private static final String TAG = "DSK";
 
-    private static final String PREFERENCES_NAME = "chahuitong_prefs";
+    private static final String PREFERENCES_NAME = "prefs";
 
     public static boolean isDebug = true;
 
@@ -34,12 +34,12 @@ public class LUtils {
         sContext = app.getApplicationContext();
     }
 
-    // ä¸‹é¢å››ä¸ªæ˜¯é»˜è®¤tagçš„å‡½æ•°
+    // ÏÂÃæËÄ¸öÊÇÄ¬ÈÏtagµÄº¯Êı
     public static void log(String msg) {
         log(TAG, msg);
     }
 
-    // ä¸‹é¢æ˜¯ä¼ å…¥è‡ªå®šä¹‰tagçš„å‡½æ•°
+    // ÏÂÃæÊÇ´«Èë×Ô¶¨ÒåtagµÄº¯Êı
     public static void log(String tag, String msg) {
         if (isDebug)
             android.util.Log.i(tag, msg);
@@ -84,7 +84,7 @@ public class LUtils {
     }
 
     /**
-     * è·å¾—å±å¹•é«˜åº¦
+     * »ñµÃÆÁÄ»¸ß¶È
      *
      * @return
      */
@@ -96,7 +96,7 @@ public class LUtils {
     }
 
     /**
-     * è·å¾—å±å¹•å®½åº¦
+     * »ñµÃÆÁÄ»¿í¶È
      *
      * @return
      */
@@ -108,7 +108,7 @@ public class LUtils {
     }
 
     /**
-     * dpè½¬px
+     * dp×ªpx
      *
      * @param dpVal
      * @return
@@ -119,9 +119,9 @@ public class LUtils {
     }
 
     /**
-     * æ‰“å¡è½¯é”®ç›˜
+     * ´ò¿¨Èí¼üÅÌ
      *
-     * @param editText è¾“å…¥æ¡†
+     * @param editText ÊäÈë¿ò
      */
     public static void openKeyboard(EditText editText) {
         InputMethodManager imm = (InputMethodManager) sContext.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -130,9 +130,9 @@ public class LUtils {
     }
 
     /**
-     * å…³é—­è½¯é”®ç›˜
+     * ¹Ø±ÕÈí¼üÅÌ
      *
-     * @param editText è¾“å…¥æ¡†
+     * @param editText ÊäÈë¿ò
      */
     public static void closeKeyboard(EditText editText) {
         InputMethodManager imm = (InputMethodManager) sContext.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -140,7 +140,7 @@ public class LUtils {
     }
 
     /**
-     * æ˜¯å¦æœ‰ç½‘ç»œ
+     * ÊÇ·ñÓĞÍøÂç
      * @return
      */
     public static boolean isNetWorkAvilable() {
@@ -155,7 +155,7 @@ public class LUtils {
     }
 
     /**
-     * å–APPç‰ˆæœ¬å·
+     * È¡APP°æ±¾ºÅ
      * @return
      */
     public static int getAppVersionCode(){
@@ -169,7 +169,7 @@ public class LUtils {
     }
 
     /**
-     * å–APPç‰ˆæœ¬å
+     * È¡APP°æ±¾Ãû
      * @return
      */
     public static String getAppVersionName(){
